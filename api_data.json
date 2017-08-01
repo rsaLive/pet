@@ -1,0 +1,171 @@
+[
+  {
+    "type": "get",
+    "url": "auction",
+    "title": "获取首页数据",
+    "name": "______",
+    "group": "Auction",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "token",
+            "description": "<p>加密哈希串</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "int",
+            "optional": false,
+            "field": "page",
+            "description": "<p>请求的页码</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "int",
+            "optional": false,
+            "field": "code",
+            "description": "<p>返回码  0 成功 1失败</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "string",
+            "optional": false,
+            "field": "msg",
+            "description": "<p>提示消息  获取数据成功</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "int",
+            "optional": false,
+            "field": "callmeNum",
+            "description": "<p>@我</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "int",
+            "optional": false,
+            "field": "praiseNum",
+            "description": "<p>点赞</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "int",
+            "optional": false,
+            "field": "attentionNum",
+            "description": "<p>关注</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "int",
+            "optional": false,
+            "field": "fansNum",
+            "description": "<p>粉丝数量</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "int",
+            "optional": false,
+            "field": "total",
+            "description": "<p>总条数</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "int",
+            "optional": false,
+            "field": "currentPage",
+            "description": "<p>当前页码</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "int",
+            "optional": false,
+            "field": "lastPage",
+            "description": "<p>最后的页码</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "object",
+            "optional": false,
+            "field": "lists",
+            "description": "<p>动态列表</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "id",
+            "optional": false,
+            "field": "id",
+            "description": "<p>唯一标识</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "string",
+            "optional": false,
+            "field": "headImgUrl",
+            "description": "<p>头像</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "string",
+            "optional": false,
+            "field": "nickname",
+            "description": "<p>昵称</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "string",
+            "optional": false,
+            "field": "createdTime",
+            "description": "<p>发表时间</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "string",
+            "optional": false,
+            "field": "title",
+            "description": "<p>主题</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "object",
+            "optional": false,
+            "field": "imgs",
+            "description": "<p>动态图</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "int",
+            "optional": false,
+            "field": "commentNum",
+            "description": "<p>评论数量</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "int",
+            "optional": false,
+            "field": "ispraise",
+            "description": "<p>是否点赞</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "{\n  \"code\": 0,\n  \"msg\": \"\",\n  \"data\":{\n     \"callmeNum\":20\n     \"praiseNum\":20\n     \"attentionNum\":20\n     \"fansNum\":20\n     \"total\":20\n     \"currentPage\":1\n     \"lastPage\":2\n     \"lists\":[\n         {\n            'id'=>1,\n            \"headImgUrl\":\"http://baidu.com/statis/head.png\",\n            \"nickname\":\"昵称\",\n            \"createTime\":\"2017-7-8 10:11\",\n            \"title\":'主题内容',\n            \"time\":\"2017-06-20 17:10\"\n            \"imgs\":[\n                 \"http://baidu.com/statis/head.png\",\n                 \"http://baidu.com/statis/head.png\",\n             ],\n             \"commentNum\":20,\n             \"praiseNum\":20,\n             \"ispraise\":1\n         },\n        {\n            'id'=>1,\n            \"headImgUrl\":\"http://baidu.com/statis/head.png\",\n            \"nickname\":\"昵称\",\n            \"createTime\":\"2017-7-8 10:11\",\n            \"title\":'主题内容',\n            \"time\":\"2017-06-20 17:10\"\n            \"imgs\":[\n                 \"http://baidu.com/statis/head.png\",\n                 \"http://baidu.com/statis/head.png\",\n             ],\n             \"commentNum\":20,\n             \"praiseNum\":20,\n             \"ispraise\":1\n         }\n     ]\n  }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "D:/install/wamp/www/basic/controller/NiController.php",
+    "groupTitle": "Auction"
+  }
+]
